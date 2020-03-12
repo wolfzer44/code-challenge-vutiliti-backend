@@ -1,0 +1,1 @@
+database: npx sequelize db:create && npx sequelize db:migrate && npx sequelize:seed:all

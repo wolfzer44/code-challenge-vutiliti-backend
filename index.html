@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="start" onclick="start()">Start</button>
+    <button id="stop" onclick="stop()">Stop</button>
+
+    <input type="datetime-local" id="time" onchange="start()">
+    
+    <script  src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+    <script>
+
+       
+
+        // const socket = io('http://localhost:81');
+        // socket.on('connect', function(){});
+        // socket.on('timer', function(data){
+           
+        //     socket.on(this.id, function(data) {
+        //         console.log(data);
+        //     })
+
+        // });
+
+        
+        // socket.on('disconnect', function(){});
+
+        function start () {
+            // socket.emit('timer', { data: true})
+            console.log(document.getElementById("time").value)
+        }
+
+        // function stop () {
+        //     socket.emit('timer', { data: false})
+        // }
+
+      </script>
+</body>
+</html>
